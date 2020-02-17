@@ -25,3 +25,6 @@ class StringFreq(Resource):
         spt = rmspc.split(',')
         output = Counter(spt)
         return {'Output Response': output}
+
+if __name__ == '__main__':
+    app.run(debug=True)
